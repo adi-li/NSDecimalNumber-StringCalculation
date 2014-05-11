@@ -10,6 +10,7 @@
 		406D2EA4191FCB2100AA7C2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406D2EA3191FCB2100AA7C2E /* Foundation.framework */; };
 		406D2EA7191FCB2100AA7C2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 406D2EA6191FCB2100AA7C2E /* main.m */; };
 		406D2EAB191FCB2100AA7C2E /* NSDecimalNumber_StringCalculation.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 406D2EAA191FCB2100AA7C2E /* NSDecimalNumber_StringCalculation.1 */; };
+		406D2EB7191FF52900AA7C2E /* NSDecimalNumber+CalculatingByString.m in Sources */ = {isa = PBXBuildFile; fileRef = 406D2EB6191FF52900AA7C2E /* NSDecimalNumber+CalculatingByString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		406D2EA6191FCB2100AA7C2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		406D2EA9191FCB2100AA7C2E /* NSDecimalNumber+StringCalculation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+StringCalculation-Prefix.pch"; sourceTree = "<group>"; };
 		406D2EAA191FCB2100AA7C2E /* NSDecimalNumber_StringCalculation.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = NSDecimalNumber_StringCalculation.1; sourceTree = "<group>"; };
+		406D2EB5191FF52900AA7C2E /* NSDecimalNumber+CalculatingByString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+CalculatingByString.h"; sourceTree = "<group>"; };
+		406D2EB6191FF52900AA7C2E /* NSDecimalNumber+CalculatingByString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+CalculatingByString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,7 @@
 		406D2E97191FCB2100AA7C2E = {
 			isa = PBXGroup;
 			children = (
+				406D2EB4191FF52900AA7C2E /* Categories */,
 				406D2EA5191FCB2100AA7C2E /* NSDecimalNumber+StringCalculation */,
 				406D2EA2191FCB2100AA7C2E /* Frameworks */,
 				406D2EA1191FCB2100AA7C2E /* Products */,
@@ -86,6 +90,15 @@
 				406D2EA9191FCB2100AA7C2E /* NSDecimalNumber+StringCalculation-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		406D2EB4191FF52900AA7C2E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				406D2EB5191FF52900AA7C2E /* NSDecimalNumber+CalculatingByString.h */,
+				406D2EB6191FF52900AA7C2E /* NSDecimalNumber+CalculatingByString.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				406D2EA7191FCB2100AA7C2E /* main.m in Sources */,
+				406D2EB7191FF52900AA7C2E /* NSDecimalNumber+CalculatingByString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
