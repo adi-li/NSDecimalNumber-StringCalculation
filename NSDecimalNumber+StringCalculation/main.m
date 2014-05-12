@@ -15,12 +15,17 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
-        NSDecimalNumber *numberA = [NSDecimalNumber decimalNumberWithString:@"10.0"];
-        NSDecimalNumber *numberB = [NSDecimalNumber decimalNumberWithString:@".214"];
+        NSDecimalNumber *numberA1 = [NSDecimalNumber decimalNumberWithString:@"10.0"];
+        NSDecimalNumber *numberB = [NSDecimalNumber decimalNumberWithString:@"12"];
         
-        NSString *equation = @"numberA + numberB * (1 + 30.1 / 100)";
+        NSString *numberC = @"100";
+        NSString *numberD = @"151";
         
-        NSDictionary *dict = @{@"numberA": numberA, @"numberB": numberB};
+        NSString *equation = @"numberA1 + -numberB * (numberD + 30 / numberC)";
+        
+        NSDictionary *dict = @{@"numberA1": numberA1, @"numberB": numberB,
+                               @"numberC": numberC, @"numberD": numberD
+                               };
         
         NSDecimalNumber *answer = [NSDecimalNumber decimalNumberWithEquation:equation decimalNumbers:dict];
         
